@@ -19,7 +19,7 @@ No. You can send via any homeserver to any room, even across federation.
 
 ## Why do I need to create rooms, access tokens, etc., manually?
 
-This is built in the simplest and lightweight way possible.
+This is built in the simplest way possible.
 You need to do more manual work, so that Email2Matrix doesn't and can be kept simple.
 
 A more easy to use version can be created.

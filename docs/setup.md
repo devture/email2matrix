@@ -25,7 +25,7 @@ If your Matrix server is installed using [matrix-docker-ansible-deploy](https://
 
 - A configuration file (`config.json`) created as shown in the [Configuration](configuration.md) documentation page
 
-	- `Smtp.Hostname` in your configuration file should either match the hostname leading to your server (using a regular `A` record), or it should be an MX record
+	- `Smtp.Hostname` in your configuration file should either match the hostname leading to your server (using a regular `A` record), or it should be an MX record that eventually leads to your server. In any case, what you see in `Smtp.Hostname` is the domain that needs to be in the `to` field of the emails you would be sending
 
 	- some mappings need to be defined (mailbox names and where those mailboxes lead on the Matrix side)
 
@@ -43,4 +43,4 @@ docker run \
 	devture/email2matrix:latest
 ```
 
-It's better to use a specific version (not `:latest`).
+It's better to use a specific Docker image tag (not `:latest`).
