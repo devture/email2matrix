@@ -1,0 +1,15 @@
+Received: from localhost.localdomain (localhost [IPv6:::1])
+	by example.com (Postfix) with ESMTP id 393A2600D1
+	for <something@another>; Mon,  1 Jan 2018 17:40:02 +0000 (UTC)
+Date: Mon, 1 Jan 2018 17:40:02 +0000
+To: slavi <something@another>
+From: Reminders sender <noreply@example.com>
+Subject: Reminder from example.com
+Message-ID: <7f90123dd371040cafb37be91086b558@localhost.localdomain>
+X-Priority: 3
+X-Mailer: PHPMailer 5.1 (phpmailer.sourceforge.net)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+=D0=A2=D0=B5=D1=81=D1=82

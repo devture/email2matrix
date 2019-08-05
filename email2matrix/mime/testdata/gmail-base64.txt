@@ -1,0 +1,47 @@
+Received: by mail-ua0-f182.google.com with SMTP id a25so27075635uak.3
+        for <something@whatever>; Tue, 02 Jan 2018 02:31:31 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=HdjriWLjqV+NydQqVN3sfYBjHdmOr6jUVApAjJui/l0=;
+        b=lJPrOS23KxW/2jK0IbA6lXtaWV3mDYDl7qvsE1CBFoVhtqXyPtGdEH38bKyY2ycSab
+         +6ApFY8dij8/0XORPZrfWKfLz3ylVorEUw047NKPKf1UmyLoc4vCj2HzcV/orINtW6IJ
+         hnv9cw55Wp9sQHEPVy1hvBT42baI3c4PU2JJUv6wkXK6XgoskVfV5EFZwGlPYOifuU46
+         of1FDqO4OfV19qxstS4pNtEAJ/dBCBzbHbq3XUo820yf0n+LODy59tGknxDeQ3PuiVSX
+         5Cf6bWeZj8nSPz9AiDemRcqheR7q22Y+RpBqY1/a2vWFoJNWDWnAKIoEKP2zuel/UIQA
+         0T9A==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=HdjriWLjqV+NydQqVN3sfYBjHdmOr6jUVApAjJui/l0=;
+        b=C8r4xqQ8CvQcNHkoag7Kw2TAnnbdhaUIKmkXo6x0B8fdZ3bU0Hzwrx4sbYCL89ekdi
+         v/k+R9l6GGJQuKdnv31ZDi+4OuQFWxtK3A10hNIcv88slSfsL6mBzgbUISM8KmWDSH7w
+         R251a01e3vbe+FBVGwmlqjAcA+rd3NAPTOxHnsYgoXhbtO5hLlQ7znzSpqqnrWErYLSL
+         QeSCVa1ZMs146c7Nh82Dh3bArpJ1JKO0r2pxvEJH+4N+/9poFqq89kP9/SQeAv9HlzAN
+         UTdqptHZm6ZhzcLqrNjwR8KOrfdoJCnO1bN1v5rBD4RbfgGdW1FCz+3Ci2ZOCHM4G0fh
+         ICBw==
+X-Gm-Message-State: AKGB3mJErtbNN2iOzJG3clIj5rfKAF09PWgqeLpeROzmUsXiMmw8YFo9
+	xq8O4YFJOAfEyV5N6rhQFcKdjcDlW1Bw6en6wH3weA==
+X-Google-Smtp-Source: ACJfBou2gAw7kHabK6TfRiSUqvVyphcL9EEP4Wib+GGKnpApmUfsxO6eJTaKVwcWdXt3OLFiqBV91xNT9XOtSfJFb3o=
+X-Received: by 10.176.22.139 with SMTP id e11mr1487238uaf.44.1514889091008;
+ Tue, 02 Jan 2018 02:31:31 -0800 (PST)
+MIME-Version: 1.0
+Received: by 10.176.29.23 with HTTP; Tue, 2 Jan 2018 02:31:30 -0800 (PST)
+From: Someone <someone@example.com>
+Date: Tue, 2 Jan 2018 12:31:30 +0200
+Message-ID: <CAFMHvQfLydvJxWQVDxDeQcStd8Jb0VeYSCAH4eNDU0vHQwGvsQ@mail.gmail.com>
+Subject: =?UTF-8?B?0YLQtdGB0YIg0L7RgiBnbWFpbA==?=
+To: something@whatever
+Content-Type: multipart/alternative; boundary="f403045f85ee24cc720561c89a52"
+
+--f403045f85ee24cc720561c89a52
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+0YLQtdGB0YIg0L7RgiBnbWFpbA0K
+--f403045f85ee24cc720561c89a52
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: base64
+
+PGRpdiBkaXI9Imx0ciI+0YLQtdGB0YIg0L7RgiBnbWFpbDxicj48L2Rpdj4NCg==
+--f403045f85ee24cc720561c89a52--

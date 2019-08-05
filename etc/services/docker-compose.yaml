@@ -1,0 +1,38 @@
+version: '2.1'
+
+services:
+  postgres:
+    image: postgres:11.4-alpine
+    user: ${CURRENT_USER_UID}:${CURRENT_USER_GID}
+    environment:
+     POSTGRES_USER: synapse
+     POSTGRES_PASSWORD: synapse-password
+     POSTGRES_DB: homeserver
+    volumes:
+    - ./matrix-synapse-postgres:/var/lib/postgresql/data
+    - /etc/passwd:/etc/passwd:ro
+
+  synapse:
+    image: matrixdotorg/synapse:v1.2.1
+    user: ${CURRENT_USER_UID}:${CURRENT_USER_GID}
+    entrypoint: python
+    command: "-m synapse.app.homeserver -c /data/homeserver.yaml"
+    restart: on-failure
+    ports:
+    # This server does not federate, so we don't expose any more ports.
+    - "41408:8008"
+    links:
+    - postgres:postgres
+    volumes:
+    - ../etc/services/matrix-synapse:/data
+    - ./matrix-synapse-media-store:/media_store
+
+  riot-web:
+    image: bubuntux/riot-web:v1.3.0
+    user: ${CURRENT_USER_UID}:${CURRENT_USER_GID}
+    ports:
+    - "41465:8080"
+    volumes:
+    - ../etc/services/matrix-riot-web/nginx.conf:/etc/nginx/nginx.conf:ro
+    - /dev/null:/etc/nginx/conf.d/default.conf:ro
+    - ../etc/services/matrix-riot-web/config.json:/etc/riot-web/config.json:ro

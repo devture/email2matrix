@@ -1,0 +1,24 @@
+{
+	"Smtp": {
+		"ListenInterface": "0.0.0.0:2525",
+		"Hostname": "email2matrix.127.0.0.1.xip.io",
+		"Workers": 10
+	},
+	"Matrix": {
+		"Mappings": [
+			{
+				"MailboxName": "test",
+				"MatrixRoomId": "!ABCD:email2matrix.127.0.0.1.xip.io",
+				"MatrixHomeserverUrl": "http://synapse:8008",
+				"MatrixUserId": "@sender:email2matrix.127.0.0.1.xip.io",
+				"MatrixAccessToken": "TOKEN_GOES_HERE",
+				"IgnoreSubject": false,
+				"IgnoreBody": false,
+				"SkipMarkdown": false
+			}
+		]
+	},
+	"Misc": {
+		"Debug": true
+	}
+}

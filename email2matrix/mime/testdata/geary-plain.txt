@@ -1,0 +1,19 @@
+Date: Mon, 01 Jan 2018 15:20:14 +0200
+From: Slavi Pantaleev <someone@example.com>
+Subject: some test
+To: something@another
+Message-Id: <1514812814.31047.2@whatever>
+X-Mailer: geary/0.12-dev
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-euby2brpLBXRGzTY2+7t"
+
+--=-euby2brpLBXRGzTY2+7t
+Content-Type: text/plain; charset=us-ascii; format=flowed
+
+test
+
+--=-euby2brpLBXRGzTY2+7t
+Content-Type: text/html; charset=us-ascii
+
+<div id="geary-body"><div>test</div></div>
+--=-euby2brpLBXRGzTY2+7t--
