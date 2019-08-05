@@ -9,7 +9,7 @@ Email2Matrix is an SMTP email server program, which receives messages to special
 
 You need Email2Matrix when you've got a system which is capable of sending email (notifications, reminders, etc.) and you'd like for that system to actually send a Matrix message instead.
 
-Instead of redoing such systems (adding support for sending messages over the [Matrix](https://matrix.org) protocol to each one), you can just configure them to send emails to the Email2Matrix server ahd have those email messages relayed over to Matrix.
+Instead of redoing such systems (adding support for sending messages over the [Matrix](https://matrix.org) protocol to each one), you can just configure them to send emails to the Email2Matrix server and have those email messages relayed over to Matrix.
 
 
 ## Do I need to use a specific homeserver for this to work?
