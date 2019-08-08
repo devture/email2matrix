@@ -1,6 +1,7 @@
 # Running email2matrix on the same host as postfix
 
 It's possible to run email2matrix on the same host with postfix. email2matrix can run on a loopback interface and postfix will forward the messges to email2matrix.
+This is a simple example what needs to be configured on email2matrix and postfix side to work together on one host.
 
 ## Architecture
 
