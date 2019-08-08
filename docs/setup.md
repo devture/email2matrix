@@ -9,7 +9,7 @@ If your Matrix server is installed using [matrix-docker-ansible-deploy](https://
 
 - [Docker](https://www.docker.com/) or other (e.g. [Podman](https://podman.io/)) container runtime engine
 
-- **port 25 available** on the host machine where you'd like to run this. If not available, you may also be able to make your existing email server on port 25 relay messages to Email2Matrix running on another port (e.g. 2525), but that's a more complicated setup.
+- **port 25 available** on the host machine where you'd like to run this. If not available, you may also be able to make your existing email server on port 25 relay messages to Email2Matrix running on another port (e.g. 2525), but that's a more complicated setup. S simplified documentation can be found [here](setup_with_postfix.md)
 
 - Matrix server configuration:
 
