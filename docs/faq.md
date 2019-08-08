@@ -38,4 +38,4 @@ On the other hand, if you'd like to have more indirection, feel free to use `MX`
 
 ## Can I run email2matrix on the same host with postfix?
 
-Yes. Here is a [documentation describing that](setup_with_postfix.md).
+Yes. Here is the [documentation describing that](setup_with_postfix.md).
