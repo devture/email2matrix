@@ -1,5 +1,7 @@
 #!/bin/sh
 
+rm -f ${PWD}/email2matrix-server
+
 docker run --rm -ti \
 	-v  ${PWD}:/work \
 	-w /work \
