@@ -1,3 +1,5 @@
+#!/bin/sh
+
 docker run --rm -ti \
 	-v  ${PWD}:/work \
 	-w /work \
