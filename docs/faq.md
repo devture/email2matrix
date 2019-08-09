@@ -35,3 +35,7 @@ You can use `MX` DNS records if you wish, but you can avoid it as well.
 If you're hosting Email2Matrix on another server which already has a DNS mapping for its hostname, you can [Configure](configuration.md) your `Smtp.Hostname` to match the hostname of the machine (example: `matrix.example.com`).
 
 On the other hand, if you'd like to have more indirection, feel free to use `MX` DNS records.
+
+## Can I run email2matrix on the same host with postfix?
+
+Yes. Here is the [documentation describing that](setup_with_postfix.md).

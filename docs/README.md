@@ -12,7 +12,6 @@ Email2Matrix forwards emails as [Matrix](http://matrix.org/) messages according 
 	- [FAQ](faq.md)
 
 - [Configuration](configuration.md)
-
 - [Setup](setup.md)
-
+	- [Running on the same host with postfix](setup_with_postfix.md)
 - [Development](development.md)
