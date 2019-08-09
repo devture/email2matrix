@@ -1,7 +1,5 @@
 /var
 /vendor/
 /pkg
-/etc/docker/Dockerfile
 /email2matrix-server
 /config.json
-/Makefile
