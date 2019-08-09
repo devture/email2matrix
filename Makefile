@@ -50,7 +50,9 @@ run-locally: build ## Builds and runs email2matrix-server locally (no containers
 	./email2matrix-server
 
 build-locally: ## Builds the email2matrix-server code locally (no containers)
-	go build email2matrix-server.go
+	go get -u -v github.com/ahmetb/govvv
+	rm -f email2matrix-server
+	go build -a -ldflags "`~/go/bin/govvv -flags`" email2matrix-server.go
 
 test: ## Runs the tests locally (no containers)
 	go test ./...

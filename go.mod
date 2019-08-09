@@ -3,6 +3,7 @@ module devture-email2matrix
 go 1.12
 
 require (
+	github.com/ahmetb/govvv v0.2.0 // indirect
 	github.com/asaskevich/EventBus v0.0.0-20180315140547-d46933a94f05 // indirect
 	github.com/euskadi31/go-service v1.3.1
 	github.com/flashmob/go-guerrilla v0.0.0-20190620040312-f9c49656c2db
