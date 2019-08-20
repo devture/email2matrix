@@ -46,7 +46,7 @@ obtain-sample-sender-access-token: _prepare_services ## Obtain an access token f
 	alpine:3.10 \
 	/bin/sh -c "apk add --no-cache curl && curl --data '{\"identifier\": {\"type\": \"m.id.user\", \"user\": \"sender\" }, \"password\": \"password\", \"type\": \"m.login.password\", \"device_id\": \"Sender\", \"initial_device_display_name\": \"Sender\"}' http://synapse:8008/_matrix/client/r0/login"
 
-run-locally: build ## Builds and runs email2matrix-server locally (no containers)
+run-locally: build-locally ## Builds and runs email2matrix-server locally (no containers)
 	./email2matrix-server
 
 build-locally: ## Builds the email2matrix-server code locally (no containers)
