@@ -3,7 +3,7 @@ WORKDIR /build
 RUN apk --no-cache add git
 RUN go install github.com/ahmetb/govvv@v0.3.0
 COPY . /build/.
-RUN GOOS=linux GOARCH=arm64 go build -ldflags "$(govvv -flags)" email2matrix-server.go
+RUN CGO_ENABLED=0 go build -a -installsuffix cgo -ldflags "$(govvv -flags)" email2matrix-server.go
 
 FROM docker.io/alpine:3.15.0
 WORKDIR /
