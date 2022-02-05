@@ -1,11 +1,11 @@
-FROM golang:1.12.8-alpine3.10
+FROM docker.io/golang:1.17.6-alpine3.15
 WORKDIR /build
 RUN apk --no-cache add git
 COPY . /build/.
-RUN go get -u -v github.com/ahmetb/govvv
-RUN CGO_ENABLED=0 go build -a -installsuffix cgo -ldflags "$(govvv -flags)" email2matrix-server.go
+RUN go install github.com/ahmetb/govvv@v0.3.0
+RUN GOOS=linux GOARCH=arm64 go build -ldflags "$(govvv -flags)" email2matrix-server.go
 
-FROM alpine:3.10
+FROM docker.io/alpine:3.15.0
 WORKDIR /
 RUN apk --no-cache add ca-certificates
 COPY --from=0 /build/email2matrix-server .
