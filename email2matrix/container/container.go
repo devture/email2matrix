@@ -55,6 +55,12 @@ func BuildContainer(
 			AllowedHosts: []string{configuration.Smtp.Hostname},
 		}
 
+		if configuration.Misc.Debug {
+			cfg.LogLevel = "debug"
+		} else {
+			cfg.LogLevel = "info"
+		}
+
 		sc := guerrilla.ServerConfig{
 			ListenInterface: configuration.Smtp.ListenInterface,
 			IsEnabled:       true,
