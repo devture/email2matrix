@@ -1,5 +1,11 @@
 # Email2Matrix: SMTP server relaying messages to Matrix rooms
 
+---------------------------------------
+
+⚠️ **Warning**: This application is outdated and no longer maintained. We recommend that you use [postmoogle](https://github.com/etkecc/postmoogle) instead.
+
+---------------------------------------
+
 [email2matrix](https://github.com/devture/email2matrix) is an SMTP server (powered by [Go-Guerrilla](https://github.com/flashmob/go-guerrilla)), which receives messages to certain special (predefined) mailboxes and relays them to [Matrix](http://matrix.org/) rooms.
 
 This is useful when you've got a system which is capable of sending email (notifications, reminders, etc.) and you'd like for that system to actually send a Matrix message instead.
